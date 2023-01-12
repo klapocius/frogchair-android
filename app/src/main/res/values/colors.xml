@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="red">#ff0000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_transparent">#B3FFFFFF</color>
+
+    <color name="grey_line">#606060</color>
+    <color name="grey_line_dark">#393939</color>
+    <color name="grey_time">#181818</color>
+    <color name="grey_toolbar_bottom_line">#222222</color>
+    <color name="grey_background">#444444</color>
+    <color name="black_transparent_20">#32000000</color>
+    <color name="black_transparent_40">#66000000</color>
+    <color name="black_transparent_50">#80000000</color>
+    <color name="black_transparent_60">#99000000</color>
+    <color name="black_transparent_80">#CC000000</color>
+
+    <color name="shadow_start">#80202020</color>
+    <color name="shadow_end">#00ffffff</color>
+
+    <color name="crown_gold">#f5c02f</color>
+    <color name="crown_silver">#ffffff</color>
+    <color name="crown_bronze">#b07800</color>
+    <color name="crown_background">#50202020</color>
+    <color name="profile_image_frame_1">#375C82</color>
+    <color name="profile_image_frame_2">#1b3754</color>
+
+    <color name="toolbar_gradient_top">#69d6f2</color>
+    <color name="toolbar_gradient_bottom">#2bb6dd</color>
+    <color name="toolbar_text_shadow">#3199b7</color>
+    <color name="toolbar_text_line">#52c3e3</color>
+    <color name="toolbar_bottom_line">#0081a6</color>
+    <color name="mission_list_subtoolbar_top_line">#006e8d</color>
+    <color name="mission_list_subtoolbar_bottom_line">#00607b</color>
+    <color name="mission_list_subtoolbar_text">#8ed6ec</color>
+    <color name="mission_list_dropdown_border">#b3a58e</color>
+
+    <color name="mission_item_code">#A1660B</color>
+    <color name="mission_item_title">#3e2a24</color>
+    <color name="mission_item_more">#ffd700</color>
+    <color name="mission_item_background">#f5ba49</color>
+    <color name="mission_item_border">#bd882e</color>
+    <color name="mission_item_background_shadow">#74581A</color>
+
+    <color name="reward_frame_1">#324346</color>
+    <color name="reward_frame_2">#99a2a3</color>
+    <color name="reward_frame_3">#7c8b8e</color>
+    <color name="reward_frame_4">#405659</color>
+
+    <color name="mission_progress_background">#1d1d1d</color>
+
+    <color name="band_background">#3b3834</color>
+    <color name="band_band_background">#1d1c1a</color>
+    <color name="band_band_border">#343331</color>
+    <color name="band_band_border_frame">#252320</color>
+    <color name="band_fighter_frame_1">#292929</color>
+    <color name="band_fighter_frame_2">#343434</color>
+    <color name="band_fighter_frame_3">#1f1f1f</color>
+    <color name="band_weapon_frame_1">#675543</color>
+    <color name="band_weapon_frame_2">#392F25</color>
+    <color name="band_fighter_button_background_1">#333333</color>
+    <color name="band_fighter_button_background_2">#4b4844</color>
+    <color name="band_fighter_button_background_3">#4f4c49</color>
+    <color name="band_fighter_button_background_4">#767471</color>
+    <color name="band_fighter_separator_1">#2c2a26</color>
+    <color name="band_fighter_separator_2">#4f4b46</color>
+    <color name="band_fighter_checkbox_background">#322e29</color>
+    <color name="band_fighter_checkbox_text">#b7b7b7</color>
+
+    <color name="fighter_frame_level">#fed100</color>
+    <color name="fighter_frame_level_number">#e9d4b2</color>
+    <color name="fighter_grey_overlay">#AA000000</color>
+    <color name="fighter_hp">#00f3ff</color>
+    <color name="fighter_atk">#ff0000</color>
+    <color name="fighter_def">#7d8cff</color>
+    <color name="fighter_wis">#61a915</color>
+    <color name="fighter_agi">#ed9102</color>
+    <color name="fighter_skill">#ff0054</color>
+
+    <color name="fighter_list_header">#3b2b25</color>
+    <color name="fighter_list_header_separator_1">#30231e</color>
+    <color name="fighter_list_header_separator_2">#514039</color>
+    <color name="fighter_list_header_bottom_line">#281b1a</color>
+    <color name="fighter_list_header_page_number">#e9d4b2</color>
+    <color name="fighter_list_max_number">#747474</color>
+    <color name="fighter_list_content_separator_1">#575757</color>
+    <color name="fighter_list_content_separator_2">#2b2b2b</color>
+
+    <color name="fighter_simple_frame_1">#523718</color>
+    <color name="fighter_simple_frame_2">#9a8266</color>
+    <color name="fighter_simple_frame_3">#c9bdad</color>
+    <color name="fighter_simple_frame_4">#6a451f</color>
+    <color name="fighter_simple_sef">#e5d4b6</color>
+
+    <color name="dialog_border">#acacac</color>
+    <color name="dialog_background">#c7c7c7</color>
+    <color name="dialog_title">#008ab2</color>
+    <color name="dialog_title_gradient_top">#ffffff</color>
+    <color name="dialog_title_gradient_bottom">#c3c3c3</color>
+    <color name="dialog_reward_background">#d8d8d8</color>
+
+    <color name="fighter_stats_level_text">#b05b00</color>
+    <color name="fighter_stats_xana">#64d2e6</color>
+    <color name="fighter_stats_hemi">#ff6833</color>
+    <color name="fighter_stats_theri">#b3cd4e</color>
+    <color name="fighter_stats_air">#a4c4c3</color>
+    <color name="fighter_stats_fire">#ff2a00</color>
+    <color name="fighter_stats_earth">#8abe14</color>
+    <color name="fighter_stats_water">#7692dd</color>
+    <color name="fighter_stats_lightning">#f3ea00</color>
+    <color name="fighter_stats_class">#ababab</color>
+    <color name="fighter_detailed_lore">#6f6f6f</color>
+
+    <color name="more_menu_dot">#a3a3a3</color>
+
+    <color name="summon_home_evenxite_title">#42E8D0</color>
+    <color name="summon_home_voxite_title">#D6D6D6</color>
+    <color name="summon_home_doxite_title">#fedd9a</color>
+    <color name="summon_home_pixite_title">#e3b17C</color>
+
+    <color name="summon_details_top_background">#122f42</color>
+    <color name="summon_details_bottom_background">#0A0B0A</color>
+
+</resources>

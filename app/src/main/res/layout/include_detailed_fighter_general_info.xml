@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:showIn="@layout/activity_detailed_fighter">
+
+    <View
+        android:id="@+id/detailed_fighter_stats_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/band_content_margin"
+        android:layout_marginEnd="@dimen/band_content_margin"
+        android:background="@drawable/background_detailed_fighter_stats"
+        app:layout_constraintBottom_toTopOf="@id/detailed_fighter_tribe_separator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detailed_fighter_toolbar_bottom"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <ImageButton
+        android:id="@+id/detailed_fighter_lock_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="@dimen/detailed_fighter_subcontent_margin"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/selector_button_locked"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="@id/detailed_fighter_stats_background"
+        app:layout_constraintTop_toBottomOf="@id/detailed_fighter_toolbar_bottom"
+        app:layout_constraintWidth_percent="0.12" />
+
+    <com.frogchair.android.common.ui.FighterLevelView
+        android:id="@+id/detailed_fighter_level"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/detailed_fighter_subcontent_margin"
+        android:layout_marginTop="@dimen/detailed_fighter_subcontent_margin"
+        app:layout_constraintEnd_toStartOf="@id/detailed_fighter_lock_button"
+        app:layout_constraintStart_toStartOf="@+id/detailed_fighter_stats_background"
+        app:layout_constraintTop_toTopOf="@id/detailed_fighter_stats_background" />
+
+    <TextView
+        android:id="@+id/detailed_fighter_sef_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/band_content_margin"
+        android:text="SEF."
+        android:textColor="@color/fighter_frame_level_number"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/detailed_fighter_stats_values"
+        app:layout_constraintStart_toStartOf="@id/detailed_fighter_stats_background"
+        app:layout_constraintTop_toBottomOf="@id/detailed_fighter_level" />
+
+    <TextView
+        android:id="@+id/detailed_fighter_sef_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="2/3"
+        android:textColor="@color/fighter_frame_level_number"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/detailed_fighter_sef_title"
+        app:layout_constraintStart_toEndOf="@id/detailed_fighter_sef_title" />
+
+    <include layout="@layout/include_detailed_fighter_stats" />
+
+</merge>

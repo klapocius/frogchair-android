@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/fighter_list_header_first"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/fighter_list_header"
+        app:layout_constraintDimensionRatio="@dimen/toolbar_width_ratio"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/fighter_list_header_separator_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/fighter_list_header_separator_1"
+        app:layout_constraintTop_toBottomOf="@id/fighter_list_header_first" />
+
+    <View
+        android:id="@+id/fighter_list_header_separator_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/fighter_list_header_separator_2"
+        app:layout_constraintTop_toBottomOf="@id/fighter_list_header_separator_1" />
+
+    <View
+        android:id="@+id/fighter_list_header_second"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/fighter_list_header"
+        app:layout_constraintDimensionRatio="@dimen/toolbar_width_ratio"
+        app:layout_constraintTop_toBottomOf="@id/fighter_list_header_separator_2" />
+
+    <TextView
+        android:id="@+id/fighter_list_header_plus"
+        style="@style/ButtonYellow"
+        android:layout_margin="5dp"
+        android:background="@drawable/selector_button_secondary"
+        android:text="+"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/fighter_list_header_second"
+        app:layout_constraintDimensionRatio="1.3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/fighter_list_header_second"
+        app:layout_constraintWidth_percent="@null"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/fighter_list_header_minus"
+        style="@style/ButtonYellow"
+        android:layout_margin="5dp"
+        android:background="@drawable/selector_button_secondary"
+        android:text="-"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/fighter_list_header_second"
+        app:layout_constraintDimensionRatio="1.3"
+        app:layout_constraintEnd_toStartOf="@id/fighter_list_header_plus"
+        app:layout_constraintTop_toTopOf="@id/fighter_list_header_second"
+        app:layout_constraintWidth_percent="@null"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/fighter_list_header_second_text"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Tap to zoom !"
+        android:textColor="@color/fighter_list_header_page_number"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/fighter_list_header_second"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/fighter_list_header_second"
+        tools:visibility="visible" />
+
+    <View
+        android:id="@+id/fighter_list_header_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/fighter_list_header_bottom_line"
+        app:layout_constraintTop_toBottomOf="@id/fighter_list_header_second" />
+
+    <View
+        android:id="@+id/fighter_list_header_bottom_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/shadow_down"
+        app:layout_constraintTop_toBottomOf="@id/fighter_list_header_bottom_line" />
+
+    <Space
+        android:id="@+id/fighter_list_number_space"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="@dimen/toolbar_width_ratio"
+        app:layout_constraintTop_toBottomOf="@id/fighter_list_header_bottom_shadow" />
+
+    <TextView
+        android:id="@+id/fighter_list_current_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:text="39"
+        android:textColor="@color/mission_item_more"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/fighter_list_number_space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/fighter_list_number_space" />
+
+    <TextView
+        android:id="@+id/fighter_list_max_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/300"
+        android:textColor="@color/fighter_list_max_number"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/fighter_list_current_number"
+        app:layout_constraintStart_toEndOf="@id/fighter_list_current_number" />
+
+    <TextView
+        android:id="@+id/fighter_list_header_page_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1/1"
+        android:textColor="@color/fighter_list_header_page_number"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/fighter_list_current_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/fighter_list_header_page_next"
+        style="@style/CatalogArrowRight"
+        app:layout_constraintBottom_toBottomOf="@id/fighter_list_number_space"
+        app:layout_constraintStart_toEndOf="@id/fighter_list_header_page_number"
+        app:layout_constraintTop_toTopOf="@id/fighter_list_number_space" />
+
+    <View
+        android:id="@+id/fighter_list_header_page_previous"
+        style="@style/CatalogArrowLeft"
+        app:layout_constraintBottom_toBottomOf="@id/fighter_list_number_space"
+        app:layout_constraintEnd_toStartOf="@id/fighter_list_header_page_number"
+        app:layout_constraintTop_toTopOf="@id/fighter_list_number_space" />
+
+    <View
+        android:id="@+id/fighter_list_content_separator_top_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/fighter_list_content_separator_1"
+        app:layout_constraintTop_toBottomOf="@id/fighter_list_number_space" />
+
+    <View
+        android:id="@+id/fighter_list_content_separator_top_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/fighter_list_content_separator_2"
+        app:layout_constraintTop_toBottomOf="@id/fighter_list_content_separator_top_1" />
+
+    <View
+        android:id="@+id/fighter_list_content_separator_top_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/shadow_down"
+        app:layout_constraintTop_toBottomOf="@id/fighter_list_content_separator_top_2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

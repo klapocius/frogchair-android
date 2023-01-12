@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_band">
+
+    <View
+        android:id="@+id/band_fighter_layout_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/band_content_margin"
+        android:layout_marginEnd="@dimen/band_content_margin"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/background_band_layout"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toTopOf="@id/band_navigation_line_black"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintTop_toBottomOf="@id/band_fighter_checkbox_background" />
+
+    <com.frogchair.android.common.ui.FighterFrameView
+        android:id="@+id/band_fighter_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/band_fighter_layout_horizontal_margin"
+        android:layout_marginTop="@dimen/band_fighter_layout_vertical_margin"
+        android:elevation="3dp"
+        android:outlineProvider="none"
+        app:layout_constraintBottom_toTopOf="@+id/band_fighter_4"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toStartOf="@+id/band_fighter_2"
+        app:layout_constraintStart_toStartOf="@id/band_fighter_layout_shadow"
+        app:layout_constraintTop_toTopOf="@id/band_fighter_layout_shadow" />
+
+    <com.frogchair.android.common.ui.FighterFrameView
+        android:id="@+id/band_fighter_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+        android:outlineProvider="none"
+        app:layout_constraintBottom_toTopOf="@+id/band_fighter_5"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toStartOf="@+id/band_fighter_3"
+        app:layout_constraintStart_toEndOf="@+id/band_fighter_1"
+        app:layout_constraintTop_toTopOf="@id/band_fighter_1" />
+
+    <com.frogchair.android.common.ui.FighterFrameView
+        android:id="@+id/band_fighter_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/band_fighter_layout_horizontal_margin"
+        android:elevation="3dp"
+        android:outlineProvider="none"
+        app:layout_constraintBottom_toTopOf="@id/band_fighter_6"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="@id/band_fighter_layout_shadow"
+        app:layout_constraintStart_toEndOf="@+id/band_fighter_2"
+        app:layout_constraintTop_toTopOf="@id/band_fighter_1" />
+
+    <com.frogchair.android.common.ui.FighterFrameView
+        android:id="@+id/band_fighter_4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+        android:outlineProvider="none"
+        app:layout_constraintBottom_toTopOf="@+id/band_fighter_7"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toStartOf="@+id/band_fighter_5"
+        app:layout_constraintStart_toStartOf="@id/band_fighter_1"
+        app:layout_constraintTop_toBottomOf="@+id/band_fighter_1" />
+
+    <com.frogchair.android.common.ui.FighterFrameView
+        android:id="@+id/band_fighter_5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+        android:outlineProvider="none"
+        app:layout_constraintBottom_toTopOf="@+id/band_fighter_8"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toStartOf="@+id/band_fighter_6"
+        app:layout_constraintStart_toEndOf="@+id/band_fighter_4"
+        app:layout_constraintTop_toBottomOf="@+id/band_fighter_2" />
+
+    <com.frogchair.android.common.ui.FighterFrameView
+        android:id="@+id/band_fighter_6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+        android:outlineProvider="none"
+        app:layout_constraintBottom_toTopOf="@+id/band_fighter_9"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="@id/band_fighter_3"
+        app:layout_constraintStart_toEndOf="@+id/band_fighter_5"
+        app:layout_constraintTop_toBottomOf="@+id/band_fighter_3" />
+
+    <com.frogchair.android.common.ui.FighterFrameView
+        android:id="@+id/band_fighter_7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/band_fighter_layout_vertical_margin"
+        android:elevation="3dp"
+        android:outlineProvider="none"
+        app:layout_constraintBottom_toBottomOf="@id/band_fighter_layout_shadow"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toStartOf="@+id/band_fighter_8"
+        app:layout_constraintStart_toStartOf="@id/band_fighter_1"
+        app:layout_constraintTop_toBottomOf="@+id/band_fighter_4" />
+
+    <com.frogchair.android.common.ui.FighterFrameView
+        android:id="@+id/band_fighter_8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+        android:outlineProvider="none"
+        app:layout_constraintBottom_toBottomOf="@id/band_fighter_7"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toStartOf="@+id/band_fighter_9"
+        app:layout_constraintStart_toEndOf="@+id/band_fighter_7"
+        app:layout_constraintTop_toBottomOf="@+id/band_fighter_5" />
+
+    <com.frogchair.android.common.ui.FighterFrameView
+        android:id="@+id/band_fighter_9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+        android:outlineProvider="none"
+        app:layout_constraintBottom_toBottomOf="@id/band_fighter_7"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="@id/band_fighter_3"
+        app:layout_constraintStart_toEndOf="@+id/band_fighter_8"
+        app:layout_constraintTop_toBottomOf="@id/band_fighter_6" />
+
+
+</merge>

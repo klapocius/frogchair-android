@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_dialog">
+
+    <View
+        android:id="@+id/dialog_more_menu_header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/background_dialog_header"
+        app:layout_constraintDimensionRatio="@dimen/toolbar_width_ratio"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dot_bold"
+        android:text="More"
+        android:textColor="@color/dialog_title"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/dialog_more_menu_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/dialog_more_menu_header" />
+
+    <View
+        android:id="@+id/dialog_more_menu_cross"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/selector_button_close"
+        app:layout_constraintBottom_toBottomOf="@id/dialog_more_menu_header"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/dialog_more_menu_header" />
+
+    <View
+        style="@style/LineGrey"
+        android:background="@drawable/shadow_down"
+        app:layout_constraintTop_toBottomOf="@id/dialog_more_menu_header" />
+
+    <com.frogchair.android.feature.more.MoreMenuItemView
+        android:id="@+id/dialog_more_menu_store_area"
+        style="@style/MoreMenuItem"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toStartOf="@id/dialog_more_menu_texi_area"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_more_menu_header"
+        app:moreAlpha="@dimen/alpha_disabled"
+        app:moreImage="@drawable/img_menu_store"
+        app:moreText="Daily shop" />
+
+    <com.frogchair.android.feature.more.MoreMenuItemView
+        android:id="@+id/dialog_more_menu_texi_area"
+        style="@style/MoreMenuItem"
+        app:layout_constraintEnd_toStartOf="@id/dialog_more_menu_goods_area"
+        app:layout_constraintStart_toEndOf="@id/dialog_more_menu_store_area"
+        app:layout_constraintTop_toTopOf="@id/dialog_more_menu_store_area"
+        app:moreAlpha="@dimen/alpha_disabled"
+        app:moreImage="@drawable/img_menu_txstore"
+        app:moreText="Texi Exchange" />
+
+    <com.frogchair.android.feature.more.MoreMenuItemView
+        android:id="@+id/dialog_more_menu_goods_area"
+        style="@style/MoreMenuItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/dialog_more_menu_texi_area"
+        app:layout_constraintTop_toTopOf="@id/dialog_more_menu_store_area"
+        app:moreAlpha="@dimen/alpha_disabled"
+        app:moreImage="@drawable/img_menu_goods"
+        app:moreText="Items" />
+
+    <com.frogchair.android.feature.more.MoreMenuItemView
+        android:id="@+id/dialog_more_menu_cache_area"
+        style="@style/MoreMenuItem"
+        android:layout_marginTop="3dp"
+        app:layout_constraintEnd_toStartOf="@id/dialog_more_menu_trade_area"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_more_menu_store_area"
+        app:moreAlpha="@dimen/alpha_disabled"
+        app:moreImage="@drawable/img_menu_cache"
+        app:moreText="Cache" />
+
+    <com.frogchair.android.feature.more.MoreMenuItemView
+        android:id="@+id/dialog_more_menu_trade_area"
+        style="@style/MoreMenuItem"
+        app:layout_constraintEnd_toStartOf="@id/dialog_more_menu_catalog_area"
+        app:layout_constraintStart_toEndOf="@id/dialog_more_menu_cache_area"
+        app:layout_constraintTop_toTopOf="@id/dialog_more_menu_cache_area"
+        app:moreAlpha="@dimen/alpha_disabled"
+        app:moreImage="@drawable/img_menu_trade"
+        app:moreText="Trade" />
+
+    <com.frogchair.android.feature.more.MoreMenuItemView
+        android:id="@+id/dialog_more_menu_catalog_area"
+        style="@style/MoreMenuItem"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/dialog_more_menu_trade_area"
+        app:layout_constraintTop_toTopOf="@id/dialog_more_menu_cache_area"
+        app:moreImage="@drawable/selector_menu_catalog"
+        app:moreText="Catalog" />
+
+    <com.frogchair.android.feature.more.MoreMenuItemView
+        android:id="@+id/dialog_more_menu_friends_area"
+        style="@style/MoreMenuItem"
+        android:layout_marginTop="3dp"
+        app:layout_constraintEnd_toStartOf="@id/dialog_more_menu_history_area"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_more_menu_cache_area"
+        app:moreAlpha="@dimen/alpha_disabled"
+        app:moreImage="@drawable/img_menu_friends"
+        app:moreText="Friends" />
+
+    <com.frogchair.android.feature.more.MoreMenuItemView
+        android:id="@+id/dialog_more_menu_history_area"
+        style="@style/MoreMenuItem"
+        app:layout_constraintEnd_toStartOf="@id/dialog_more_menu_friends_area"
+        app:layout_constraintStart_toEndOf="@id/dialog_more_menu_settings_area"
+        app:layout_constraintTop_toTopOf="@id/dialog_more_menu_friends_area"
+        app:moreAlpha="@dimen/alpha_disabled"
+        app:moreImage="@drawable/img_menu_history"
+        app:moreText="History" />
+
+    <com.frogchair.android.feature.more.MoreMenuItemView
+        android:id="@+id/dialog_more_menu_settings_area"
+        style="@style/MoreMenuItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/dialog_more_menu_history_area"
+        app:layout_constraintTop_toTopOf="@id/dialog_more_menu_friends_area"
+        app:moreImage="@drawable/img_menu_setting"
+        app:moreText="Settings" />
+
+    <com.frogchair.android.feature.more.MoreMenuItemView
+        android:id="@+id/dialog_more_menu_help_area"
+        style="@style/MoreMenuItem"
+        android:layout_marginTop="3dp"
+        app:moreAlpha="@dimen/alpha_disabled"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/dialog_more_menu_history_area"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_more_menu_friends_area"
+        app:moreImage="@drawable/selector_menu_help"
+        app:moreText="Anim tests" />
+
+    <View
+        android:layout_width="3dp"
+        android:layout_height="0dp"
+        android:background="@drawable/border_dotted_menu_vertical"
+        android:layerType="software"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/dialog_more_menu_texi_area"
+        app:layout_constraintStart_toEndOf="@id/dialog_more_menu_store_area"
+        app:layout_constraintTop_toBottomOf="@id/dialog_more_menu_header" />
+
+    <View
+        android:layout_width="3dp"
+        android:layout_height="0dp"
+        android:background="@drawable/border_dotted_menu_vertical"
+        android:layerType="software"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/dialog_more_menu_goods_area"
+        app:layout_constraintStart_toEndOf="@id/dialog_more_menu_texi_area"
+        app:layout_constraintTop_toBottomOf="@id/dialog_more_menu_header" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="@drawable/border_dotted_menu_horizontal"
+        android:layerType="software"
+        app:layout_constraintBottom_toTopOf="@id/dialog_more_menu_cache_area"
+        app:layout_constraintTop_toBottomOf="@id/dialog_more_menu_store_area" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="@drawable/border_dotted_menu_horizontal"
+        android:layerType="software"
+        app:layout_constraintBottom_toTopOf="@id/dialog_more_menu_friends_area"
+        app:layout_constraintTop_toBottomOf="@id/dialog_more_menu_cache_area" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="@drawable/border_dotted_menu_horizontal"
+        android:layerType="software"
+        app:layout_constraintBottom_toTopOf="@id/dialog_more_menu_help_area"
+        app:layout_constraintTop_toBottomOf="@id/dialog_more_menu_friends_area" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

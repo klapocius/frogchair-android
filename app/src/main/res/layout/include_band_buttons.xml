@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_band">
+
+    <View
+        android:id="@+id/band_fighter_checkbox_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/band_content_margin"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_band_checkbox"
+        app:layout_constraintBottom_toTopOf="@id/band_fighter_layout_shadow"
+        app:layout_constraintDimensionRatio="2.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_toolbar_line_bottom"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintWidth_percent="0.32" />
+
+    <CheckBox
+        android:id="@+id/band_fighter_checkbox_skill"
+        style="@style/BandCheckbox"
+        app:layout_constraintBottom_toTopOf="@+id/band_fighter_checkbox_skill_text"
+        app:layout_constraintEnd_toStartOf="@id/band_fighter_checkbox_stats"
+        app:layout_constraintStart_toStartOf="@id/band_fighter_checkbox_background"
+        app:layout_constraintTop_toTopOf="@id/band_fighter_checkbox_background" />
+
+    <TextView
+        android:id="@+id/band_fighter_checkbox_skill_text"
+        style="@style/BandCheckboxText"
+        android:text="Skills"
+        app:layout_constraintBottom_toBottomOf="@+id/band_fighter_checkbox_background"
+        app:layout_constraintEnd_toEndOf="@+id/band_fighter_checkbox_skill"
+        app:layout_constraintStart_toStartOf="@+id/band_fighter_checkbox_skill"
+        app:layout_constraintTop_toBottomOf="@+id/band_fighter_checkbox_skill" />
+
+    <CheckBox
+        android:id="@+id/band_fighter_checkbox_stats"
+        style="@style/BandCheckbox"
+        app:layout_constraintBottom_toTopOf="@id/band_fighter_checkbox_stats_text"
+        app:layout_constraintEnd_toEndOf="@id/band_fighter_checkbox_background"
+        app:layout_constraintStart_toEndOf="@id/band_fighter_checkbox_skill"
+        app:layout_constraintTop_toTopOf="@id/band_fighter_checkbox_background" />
+
+    <TextView
+        android:id="@+id/band_fighter_checkbox_stats_text"
+        style="@style/BandCheckboxText"
+        android:text="Stats"
+        app:layout_constraintBottom_toBottomOf="@+id/band_fighter_checkbox_background"
+        app:layout_constraintEnd_toEndOf="@+id/band_fighter_checkbox_stats"
+        app:layout_constraintStart_toStartOf="@+id/band_fighter_checkbox_stats"
+        app:layout_constraintTop_toBottomOf="@+id/band_fighter_checkbox_stats" />
+
+    <TextView
+        android:id="@+id/band_fighter_button_fighter"
+        style="@style/BandButtonText"
+        android:layout_marginEnd="4dp"
+        android:text="Fighter"
+        app:drawableStartCompat="@drawable/ic_fighter_black"
+        app:layout_constraintBottom_toBottomOf="@+id/band_fighter_checkbox_background"
+        app:layout_constraintEnd_toStartOf="@id/band_fighter_button_weapon"
+        app:layout_constraintTop_toTopOf="@+id/band_fighter_checkbox_background" />
+
+
+    <TextView
+        android:id="@+id/band_fighter_button_weapon"
+        style="@style/BandButtonText"
+        android:layout_marginEnd="@dimen/band_content_margin"
+        android:text="Gear"
+        android:alpha="@dimen/alpha_disabled"
+        app:drawableStartCompat="@drawable/ic_weapon_black"
+        app:layout_constraintBottom_toBottomOf="@+id/band_fighter_checkbox_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/band_fighter_checkbox_background" />
+
+    <View
+        android:id="@+id/band_fighter_checkbox_separator_1"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/band_fighter_separator_1"
+        app:layout_constraintBottom_toBottomOf="@id/band_fighter_checkbox_background"
+        app:layout_constraintEnd_toStartOf="@id/band_fighter_checkbox_separator_2"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/band_fighter_checkbox_background"
+        app:layout_constraintTop_toTopOf="@id/band_fighter_checkbox_background" />
+
+    <View
+        android:id="@+id/band_fighter_checkbox_separator_2"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/band_fighter_separator_2"
+        app:layout_constraintBottom_toBottomOf="@id/band_fighter_checkbox_background"
+        app:layout_constraintEnd_toStartOf="@id/band_fighter_button_fighter"
+        app:layout_constraintStart_toEndOf="@id/band_fighter_checkbox_separator_1"
+        app:layout_constraintTop_toTopOf="@id/band_fighter_checkbox_background" />
+
+</merge>

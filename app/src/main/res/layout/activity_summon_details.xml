@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/summon_details_background"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/background_summon_details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="0.666"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.72" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/background_summon_details_top"
+        android:backgroundTint="@color/summon_details_top_background"
+        app:layout_constraintBottom_toTopOf="@id/summon_details_background"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/background_summon_details_bottom"
+        android:backgroundTint="@color/summon_details_bottom_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/summon_details_background" />
+
+    <TextView
+        android:id="@+id/summon_details_title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/img_summon_details_title_pixite"
+        android:fontFamily="@font/dot_bold"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:text="Pixite Build"
+        android:textColor="@color/summon_home_pixite_title"
+        android:textSize="16dp"
+        app:layout_constraintDimensionRatio="4.777"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/summon_details_background"
+        app:layout_constraintWidth_percent="0.73" />
+
+    <TextView
+        android:id="@+id/summon_details_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="You might get :"
+        android:textColor="@color/fighter_list_header_page_number"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/summon_details_title" />
+
+    <com.frogchair.android.common.ui.FighterSimpleView
+        android:id="@+id/summon_details_sample_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toStartOf="@+id/summon_details_sample_2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/summon_details_subtitle" />
+
+    <com.frogchair.android.common.ui.FighterSimpleView
+        android:id="@+id/summon_details_sample_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toStartOf="@+id/summon_details_sample_3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/summon_details_sample_1"
+        app:layout_constraintTop_toTopOf="@id/summon_details_sample_1" />
+
+    <com.frogchair.android.common.ui.FighterSimpleView
+        android:id="@+id/summon_details_sample_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toStartOf="@+id/summon_details_sample_4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/summon_details_sample_2"
+        app:layout_constraintTop_toTopOf="@id/summon_details_sample_1" />
+
+    <com.frogchair.android.common.ui.FighterSimpleView
+        android:id="@+id/summon_details_sample_4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toStartOf="@+id/summon_details_sample_5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/summon_details_sample_3"
+        app:layout_constraintTop_toTopOf="@id/summon_details_sample_1" />
+
+    <com.frogchair.android.common.ui.FighterSimpleView
+        android:id="@+id/summon_details_sample_5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toStartOf="@+id/summon_details_sample_6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/summon_details_sample_4"
+        app:layout_constraintTop_toTopOf="@id/summon_details_sample_1" />
+
+    <com.frogchair.android.common.ui.FighterSimpleView
+        android:id="@+id/summon_details_sample_6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/summon_details_sample_5"
+        app:layout_constraintTop_toTopOf="@id/summon_details_sample_1" />
+
+    <TextView
+        android:id="@+id/summon_details_rates_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="10dp"
+        android:text="ⓘ See HERE  for rates &amp; pick-up rates."
+        android:textColor="@color/fighter_list_header_page_number"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/summon_details_sample_1" />
+
+    <View
+        android:id="@+id/summon_details_exo_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/img_summon_details_exo"
+        app:layout_constraintBottom_toTopOf="@id/summon_details_build_button"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/summon_details_rates_text"
+        app:layout_constraintVertical_bias="0.060000002"
+        app:layout_constraintWidth_percent="0.47" />
+
+    <View
+        android:id="@+id/summon_details_fighter_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/fighter_312802_image"
+        app:layout_constraintBottom_toBottomOf="@id/summon_details_exo_view"
+        app:layout_constraintDimensionRatio="@dimen/fighter_ratio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.47" />
+
+    <View
+        android:id="@+id/summon_details_rarity_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="14dp"
+        android:background="@drawable/ic_rarity_legend_big"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="@id/summon_details_sample_1"
+        app:layout_constraintStart_toStartOf="@id/summon_details_sample_1"
+        app:layout_constraintTop_toBottomOf="@id/summon_details_sample_1" />
+
+    <com.frogchair.android.common.ui.PrimaryButton
+        android:id="@+id/summon_details_build_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/summon_details_background"
+        app:layout_constraintDimensionRatio="1.33"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/summon_details_background"
+        app:layout_constraintVertical_bias="0.89"
+        app:layout_constraintWidth_percent="@dimen/primary_button_width_percent" />
+
+    <FrameLayout
+        android:id="@+id/summon_details_back_arrow"
+        style="@style/NavigationBackArrowLayout">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_back_arrow" />
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

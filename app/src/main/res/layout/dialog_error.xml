@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_dialog">
+
+    <View
+        android:id="@+id/dialog_error_header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/background_dialog_header"
+        app:layout_constraintDimensionRatio="@dimen/toolbar_width_ratio"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dialog_error_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dot_bold"
+        android:text="An error occurred"
+        android:textColor="@color/dialog_title"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/dialog_error_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/dialog_error_header" />
+
+    <View
+        style="@style/LineGrey"
+        android:background="@drawable/shadow_down"
+        app:layout_constraintTop_toBottomOf="@id/dialog_error_header" />
+
+    <View
+        android:id="@+id/dialog_error_background"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:background="@color/dialog_reward_background"
+        app:layout_constraintDimensionRatio="2.3"
+        app:layout_constraintTop_toBottomOf="@id/dialog_error_header" />
+
+    <TextView
+        android:id="@+id/dialog_error_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Something bad happened"
+        android:textColor="@color/grey_background"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/dialog_error_background"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/dialog_error_background" />
+
+    <TextView
+        android:id="@+id/dialog_error_button"
+        style="@style/ButtonYellow"
+        android:layout_margin="10dp"
+        android:text="Retry"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_error_background" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

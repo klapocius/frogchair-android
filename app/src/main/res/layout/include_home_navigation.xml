@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_home">
+
+    <View
+        android:id="@+id/home_navigation_grey_line"
+        style="@style/LineGrey"
+        android:paddingTop="4dp"
+        app:layout_constraintBottom_toTopOf="@id/home_navigation_background" />
+
+    <View
+        android:id="@+id/home_navigation_background"
+        style="@style/NavigationBackground" />
+
+    <com.frogchair.android.common.ui.SecondaryButton
+        android:id="@+id/home_navigation_build"
+        style="@style/HomeNavigationItem"
+        android:layout_marginStart="@dimen/navigation_horizontal_margin"
+        app:iconDrawable="@drawable/ic_build"
+        app:layout_constraintBottom_toBottomOf="@id/home_navigation_background"
+        app:layout_constraintEnd_toStartOf="@+id/home_navigation_band"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/home_navigation_background"
+        app:text="Build" />
+
+    <com.frogchair.android.common.ui.SecondaryButton
+        android:id="@+id/home_navigation_band"
+        style="@style/HomeNavigationItem"
+        app:iconDrawable="@drawable/ic_band"
+        app:layout_constraintBottom_toBottomOf="@id/home_navigation_background"
+        app:layout_constraintEnd_toStartOf="@+id/home_navigation_main"
+        app:layout_constraintStart_toEndOf="@+id/home_navigation_build"
+        app:layout_constraintTop_toTopOf="@id/home_navigation_background"
+        app:text="Band" />
+
+    <com.frogchair.android.common.ui.PrimaryButton
+        android:id="@+id/home_navigation_main"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/home_navigation_background"
+        app:layout_constraintEnd_toStartOf="@+id/home_navigation_battle"
+        app:layout_constraintStart_toEndOf="@+id/home_navigation_band"
+        app:layout_constraintTop_toTopOf="@id/home_navigation_grey_line"
+        app:layout_constraintWidth_percent="@dimen/primary_button_width_percent" />
+
+    <com.frogchair.android.common.ui.SecondaryButton
+        android:id="@+id/home_navigation_battle"
+        style="@style/HomeNavigationItem"
+        android:alpha="@dimen/alpha_disabled"
+        app:iconDrawable="@drawable/ic_battle"
+        app:layout_constraintBottom_toBottomOf="@id/home_navigation_background"
+        app:layout_constraintEnd_toStartOf="@+id/home_navigation_more"
+        app:layout_constraintStart_toEndOf="@+id/home_navigation_main"
+        app:layout_constraintTop_toTopOf="@id/home_navigation_background"
+        app:text="Battle" />
+
+    <com.frogchair.android.common.ui.SecondaryButton
+        android:id="@+id/home_navigation_more"
+        style="@style/HomeNavigationItem"
+        android:layout_marginEnd="@dimen/navigation_horizontal_margin"
+        app:iconDrawable="@drawable/ic_more"
+        app:layout_constraintBottom_toBottomOf="@id/home_navigation_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/home_navigation_battle"
+        app:layout_constraintTop_toTopOf="@id/home_navigation_background"
+        app:text="More" />
+
+</merge>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mission_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/include_regen_toolbar" />
+
+    <View
+        android:id="@+id/mission_subtoolbar_background"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/background_home_footer"
+        app:layout_constraintDimensionRatio="8"
+        app:layout_constraintTop_toBottomOf="@id/include_toolbar" />
+
+    <View
+        android:id="@+id/mission_subtoolbar_line_light"
+        app:layout_constraintTop_toBottomOf="@id/mission_subtoolbar_background"
+        style="@style/LineGrey" />
+
+    <View
+        android:id="@+id/mission_subtoolbar_line_dark"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/grey_line_dark"
+        app:layout_constraintTop_toBottomOf="@id/mission_subtoolbar_line_light" />
+
+    <include
+        android:id="@+id/mission_war_ground_layout"
+        layout="@layout/include_mission_war_ground"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/mission_progress_line_dark"
+        app:layout_constraintTop_toBottomOf="@id/mission_subtoolbar_line_dark" />
+
+    <include layout="@layout/include_mission_progress" />
+
+    <include layout="@layout/include_mission_navigation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

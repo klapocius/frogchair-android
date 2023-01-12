@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="InlineButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="layout_constraintDimensionRatio">3.64</item>
+        <item name="layout_constraintWidth_percent">0.35</item>
+    </style>
+
+    <style name="ButtonYellow" parent="InlineButton">
+        <item name="android:background">@drawable/selector_button_yellow</item>
+    </style>
+
+    <style name="ButtonRed" parent="InlineButton">
+        <item name="android:background">@drawable/selector_button_red</item>
+    </style>
+
+    <style name="HomeNavigationItem">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="layout_constraintWidth_percent">@dimen/secondary_button_width_percent</item>
+    </style>
+
+    <style name="HomeCrownText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:gravity">center_vertical|start</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:translationX">-4dp</item>
+        <item name="layout_constraintBottom_toBottomOf">@id/home_account_crown_background</item>
+        <item name="layout_constraintTop_toTopOf">@id/home_account_crown_background</item>
+        <item name="layout_constraintWidth_percent">0.09</item>
+    </style>
+
+    <style name="HomeCrownImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="layout_constraintBottom_toBottomOf">@id/home_account_crown_background</item>
+        <item name="layout_constraintTop_toTopOf">@id/home_account_crown_background</item>
+    </style>
+
+    <style name="NuxRegenNuxBit">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@drawable/ic_nux_bit_empty</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintDimensionRatio">1</item>
+        <item name="layout_constraintHeight_percent">0.45</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+    </style>
+
+    <style name="RegenTimeCount">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:gravity">top|center_horizontal</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/grey_time</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="RegenWhiteText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:gravity">end</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ProgressBarLevelYellowText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/fighter_stats_level_text</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="RegenProgressBar" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginEnd">1dp</item>
+        <item name="android:translationX">-3dp</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintHeight_percent">0.42</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+    </style>
+
+    <style name="RegenLogoBackground">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginEnd">1dp</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintDimensionRatio">1</item>
+        <item name="layout_constraintHeight_percent">0.625</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+    </style>
+
+    <style name="RegenLogoImage">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginEnd">1dp</item>
+        <item name="android:background">@drawable/ic_bp</item>
+        <item name="layout_constraintDimensionRatio">1.66</item>
+        <item name="layout_constraintHeight_percent">0.3</item>
+    </style>
+
+    <style name="NavigationBackground">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@drawable/background_home_footer</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintDimensionRatio">5.8</item>
+    </style>
+
+    <style name="NavigationBackArrowLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginStart">@dimen/navigation_horizontal_margin</item>
+        <item name="android:padding">6dp</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintDimensionRatio">@dimen/back_arrow_ratio</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintWidth_percent">@dimen/secondary_button_width_percent</item>
+    </style>
+
+    <style name="LineGrey">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/grey_line</item>
+        <item name="android:layout_height">@dimen/line_height</item>
+    </style>
+
+    <style name="BandCheckbox">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@drawable/selector_checkbox</item>
+        <item name="android:button">@null</item>
+        <item name="buttonCompat">@null</item>
+        <item name="layout_constraintDimensionRatio">0.87</item>
+        <item name="layout_constraintVertical_chainStyle">packed</item>
+    </style>
+
+    <style name="BandCheckboxText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">2dp</item>
+        <item name="android:textColor">@color/band_fighter_checkbox_text</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="BandButtonText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@drawable/background_band_fighter_button</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:clickable">true</item>
+        <item name="android:selectable">true</item>
+        <item name="layout_constraintDimensionRatio">3</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="layout_constraintWidth_percent">0.25</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="FighterFrameStatImage">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginStart">2dp</item>
+        <item name="layout_constraintDimensionRatio">1</item>
+    </style>
+
+    <style name="FighterFrameStatsText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:translationY">-1dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="BackArrowStandalone">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginStart">@dimen/mission_list_content_margin</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:background">@drawable/selector_back_arrow</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintDimensionRatio">@dimen/back_arrow_ratio</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintWidth_percent">@dimen/back_arrow_width_percent</item>
+    </style>
+
+    <style name="DetailedFighterStatsText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:translationY">-1dp</item>
+        <item name="android:textColor">@color/fighter_frame_level_number</item>
+    </style>
+
+    <style name="MoreMenuItem">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="layout_constraintDimensionRatio">1.15</item>
+        <item name="layout_constraintWidth_percent">0.3</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="CatalogArrowRight">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:background">@drawable/selector_arrow_right</item>
+        <item name="layout_constraintDimensionRatio">0.65</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintHorizontal_bias">0.2</item>
+    </style>
+
+    <style name="CatalogArrowLeft">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:background">@drawable/selector_arrow_left</item>
+        <item name="layout_constraintDimensionRatio">0.65</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintHorizontal_bias">0.8</item>
+    </style>
+
+    <style name="SummonHomeBoxTop">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="layout_constraintDimensionRatio">0.9</item>
+        <item name="layout_constraintWidth_percent">0.35</item>
+    </style>
+
+    <style name="SummonHomeBoxBottom">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="layout_constraintDimensionRatio">0.93</item>
+        <item name="layout_constraintWidth_percent">0.3</item>
+    </style>
+
+    <style name="SummonHomeStoneText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:background">@drawable/background_stone_text</item>
+        <item name="android:paddingStart">4dp</item>
+        <item name="android:paddingEnd">6dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SummonHomeStoneTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="swipe_view_fighter">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="layout_constraintWidth_percent">@dimen/swipe_view_fighter_percent</item>
+        <item name="layout_constraintDimensionRatio">1</item>
+        <item name="layout_constraintHorizontal_chainStyle">spread_inside</item>
+        <item name="layout_constraintVertical_chainStyle">spread_inside</item>
+        <item name="android:elevation">5px</item> <!-- above 4px needed-->
+    </style>
+
+    <style name="fight_enemy">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:scaleX">-1</item>
+        <item name="android:translationX">20dp</item>
+        <item name="layout_constraintWidth_percent">@dimen/fight_fighter_width_percent</item>
+        <item name="layout_constraintDimensionRatio">@dimen/fighter_ratio</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintBottom_toTopOf">@id/fight_step_text</item>
+    </style>
+
+    <style name="fight_ally">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:translationX">-10dp</item>
+        <item name="android:visibility">gone</item>
+        <item name="layout_constraintWidth_percent">@dimen/fight_fighter_width_percent</item>
+        <item name="layout_constraintDimensionRatio">@dimen/fighter_ratio</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintBottom_toTopOf">@id/fight_step_text</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+    </style>
+
+</resources>

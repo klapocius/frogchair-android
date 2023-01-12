@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_home">
+
+    <ImageView
+        android:id="@+id/home_band_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/fighter_205412_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="@dimen/fighter_ratio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_account_background"
+        app:layout_constraintVertical_bias="0.7"
+        app:layout_constraintWidth_percent="@dimen/home_fighter_width_percent_line_1" />
+
+    <ImageView
+        android:id="@+id/home_band_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/fighter_205412_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="@dimen/fighter_ratio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_account_background"
+        app:layout_constraintVertical_bias="0.7"
+        app:layout_constraintWidth_percent="@dimen/home_fighter_width_percent_line_1" />
+
+    <ImageView
+        android:id="@+id/home_band_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/fighter_205412_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="@dimen/fighter_ratio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_account_background"
+        app:layout_constraintVertical_bias="0.7"
+        app:layout_constraintWidth_percent="@dimen/home_fighter_width_percent_line_1" />
+
+    <ImageView
+        android:id="@+id/home_band_4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/fighter_205412_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="@dimen/fighter_ratio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_account_background"
+        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintWidth_percent="@dimen/home_fighter_width_percent_line_2" />
+
+    <ImageView
+        android:id="@+id/home_band_5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/fighter_205412_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="@dimen/fighter_ratio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_account_background"
+        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintWidth_percent="@dimen/home_fighter_width_percent_line_2" />
+
+    <ImageView
+        android:id="@+id/home_band_6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/fighter_205412_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="@dimen/fighter_ratio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_account_background"
+        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintWidth_percent="@dimen/home_fighter_width_percent_line_2" />
+
+
+    <ImageView
+        android:id="@+id/home_band_7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/fighter_205412_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="@dimen/fighter_ratio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_account_background"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintWidth_percent="@dimen/home_fighter_width_percent_line_3" />
+
+    <ImageView
+        android:id="@+id/home_band_8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/fighter_205412_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="@dimen/fighter_ratio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_account_background"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintWidth_percent="@dimen/home_fighter_width_percent_line_3" />
+
+    <ImageView
+        android:id="@+id/home_band_9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/fighter_205412_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="@dimen/fighter_ratio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_account_background"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintWidth_percent="@dimen/home_fighter_width_percent_line_3" />
+
+</merge>

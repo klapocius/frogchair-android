@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_fight" />
+
+    <ImageView
+        android:id="@+id/fight_step_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/backgroud_fight_step_text"
+        app:layout_constraintBottom_toBottomOf="@id/fight_step_text"
+        app:layout_constraintEnd_toEndOf="@id/fight_step_text"
+        app:layout_constraintStart_toStartOf="@id/fight_step_text"
+        app:layout_constraintTop_toTopOf="@id/fight_step_text" />
+
+    <TextView
+        android:id="@+id/fight_step_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="2dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Swipe to choose 3 lines"
+        android:textColor="@color/fighter_frame_level_number"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/fight_swipe_view" />
+
+    <com.frogchair.android.feature.fight.SwipeView
+        android:id="@+id/fight_swipe_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:background="@color/black" />
+
+    <ImageView
+        android:id="@+id/fight_enemy_1"
+        style="@style/fight_enemy"
+        android:src="@drawable/exo_462900"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="@dimen/fight_fighter_vertical_bias_1" />
+
+    <ImageView
+        android:id="@+id/fight_enemy_2"
+        style="@style/fight_enemy"
+        android:src="@drawable/exo_464002"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="@dimen/fight_fighter_vertical_bias_2" />
+
+    <ImageView
+        android:id="@+id/fight_enemy_3"
+        style="@style/fight_enemy"
+        android:src="@drawable/exo_467400"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="@dimen/fight_fighter_vertical_bias_3" />
+
+    <ImageView
+        android:id="@+id/fight_ally_1"
+        style="@style/fight_ally"
+        android:src="@drawable/fighter_314502_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="@dimen/fight_fighter_vertical_bias_1"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/fight_ally_2"
+        style="@style/fight_ally"
+        android:src="@drawable/fighter_314602_image"
+        app:layout_constraintVertical_bias="@dimen/fight_fighter_vertical_bias_2"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/fight_ally_3"
+        style="@style/fight_ally"
+        android:src="@drawable/fighter_314902_image"
+        app:layout_constraintVertical_bias="@dimen/fight_fighter_vertical_bias_3"
+        tools:visibility="visible" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

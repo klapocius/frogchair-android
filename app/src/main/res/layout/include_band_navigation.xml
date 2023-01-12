@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_band">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@drawable/shadow_up"
+        app:layout_constraintBottom_toTopOf="@id/band_navigation_line_black" />
+
+    <View
+        android:id="@+id/band_navigation_line_black"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/band_navigation_line_grey" />
+
+    <View
+        android:id="@+id/band_navigation_line_grey"
+        style="@style/LineGrey"
+        app:layout_constraintBottom_toTopOf="@id/band_navigation_background" />
+
+    <View
+        android:id="@+id/band_navigation_background"
+        style="@style/NavigationBackground" />
+
+    <com.frogchair.android.common.ui.PrimaryButton
+        android:id="@+id/band_go_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/band_navigation_background"
+        app:layout_constraintWidth_percent="@dimen/primary_button_width_percent"
+        tools:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/band_navigation_back_arrow"
+        style="@style/NavigationBackArrowLayout"
+        app:layout_constraintTop_toTopOf="@id/band_navigation_background">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_back_arrow" />
+
+    </FrameLayout>
+
+</merge>

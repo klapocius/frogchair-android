@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_detailed_fighter">
+
+
+    <View
+        android:id="@+id/detailed_fighter_toolbar_top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/background_home_header_top"
+        app:layout_constraintDimensionRatio="16"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/detailed_fighter_toolbar_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/background_home_header_bottom"
+        app:layout_constraintDimensionRatio="16"
+        app:layout_constraintTop_toBottomOf="@id/detailed_fighter_toolbar_top" />
+
+    <View
+        android:id="@+id/detailed_fighter_home_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/selector_home"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="@id/detailed_fighter_toolbar_bottom"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/detailed_fighter_toolbar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/detailed_fighter_toolbar_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Lord of Dolor" />
+
+</merge>

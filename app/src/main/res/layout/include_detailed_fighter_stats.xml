@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_detailed_fighter">
+
+    <View
+        android:id="@+id/detailed_fighter_stats_values"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/detailed_fighter_subcontent_margin"
+        android:background="@color/black_transparent_50"
+        app:layout_constraintBottom_toBottomOf="@id/detailed_fighter_stats_background"
+        app:layout_constraintDimensionRatio="2.23"
+        app:layout_constraintEnd_toEndOf="@id/detailed_fighter_stats_background"
+        app:layout_constraintStart_toStartOf="@id/detailed_fighter_stats_background" />
+
+    <TextView
+        android:id="@+id/detailed_fighter_stats_hp_text"
+        style="@style/DetailedFighterStatsText"
+        android:layout_marginStart="2dp"
+        android:text="10011"
+        app:layout_constraintBottom_toTopOf="@id/detailed_fighter_stats_atk_text"
+        app:layout_constraintStart_toEndOf="@+id/detailed_fighter_stats_hp_ic"
+        app:layout_constraintTop_toTopOf="@id/detailed_fighter_stats_values" />
+
+    <View
+        android:id="@+id/detailed_fighter_stats_hp_ic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/detailed_fighter_subcontent_margin"
+        android:background="@drawable/ic_hp_grey"
+        app:layout_constraintBottom_toBottomOf="@id/detailed_fighter_stats_hp_text"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintStart_toStartOf="@+id/detailed_fighter_stats_values"
+        app:layout_constraintTop_toTopOf="@id/detailed_fighter_stats_hp_text" />
+
+    <TextView
+        android:id="@+id/detailed_fighter_stats_atk_text"
+        style="@style/DetailedFighterStatsText"
+        android:text="12007"
+        android:textColor="@color/fighter_frame_level_number"
+        app:layout_constraintBottom_toTopOf="@id/detailed_fighter_stats_wis_text"
+        app:layout_constraintStart_toStartOf="@+id/detailed_fighter_stats_hp_text"
+        app:layout_constraintTop_toBottomOf="@id/detailed_fighter_stats_hp_text" />
+
+    <View
+        android:id="@+id/detailed_fighter_stats_atk_ic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_atk_grey"
+        app:layout_constraintBottom_toBottomOf="@id/detailed_fighter_stats_atk_text"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintStart_toStartOf="@+id/detailed_fighter_stats_hp_ic"
+        app:layout_constraintTop_toTopOf="@id/detailed_fighter_stats_atk_text" />
+
+    <TextView
+        android:id="@+id/detailed_fighter_stats_wis_text"
+        style="@style/DetailedFighterStatsText"
+        android:text="1167"
+        android:textColor="@color/fighter_frame_level_number"
+        app:layout_constraintBottom_toBottomOf="@id/detailed_fighter_stats_values"
+        app:layout_constraintStart_toStartOf="@+id/detailed_fighter_stats_hp_text"
+        app:layout_constraintTop_toBottomOf="@id/detailed_fighter_stats_atk_text" />
+
+    <View
+        android:id="@+id/detailed_fighter_stats_wis_ic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_wis_grey"
+        app:layout_constraintBottom_toBottomOf="@id/detailed_fighter_stats_wis_text"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintStart_toStartOf="@+id/detailed_fighter_stats_hp_ic"
+        app:layout_constraintTop_toTopOf="@id/detailed_fighter_stats_wis_text" />
+
+    <View
+        android:id="@+id/detailed_fighter_stats_def_ic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/detailed_fighter_subcontent_margin"
+        android:background="@drawable/ic_def_grey"
+        app:layout_constraintBottom_toBottomOf="@id/detailed_fighter_stats_atk_text"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="@id/detailed_fighter_stats_values"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toEndOf="@+id/detailed_fighter_stats_atk_text"
+        app:layout_constraintTop_toTopOf="@id/detailed_fighter_stats_atk_text" />
+
+    <TextView
+        android:id="@+id/detailed_fighter_stats_def_text"
+        style="@style/DetailedFighterStatsText"
+        android:layout_marginStart="2dp"
+        android:text="7952"
+        app:layout_constraintBaseline_toBaselineOf="@id/detailed_fighter_stats_atk_text"
+        app:layout_constraintStart_toEndOf="@id/detailed_fighter_stats_def_ic" />
+
+    <View
+        android:id="@+id/detailed_fighter_stats_agi_ic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_agi_grey"
+        app:layout_constraintBottom_toBottomOf="@id/detailed_fighter_stats_wis_text"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintStart_toStartOf="@+id/detailed_fighter_stats_def_ic"
+        app:layout_constraintTop_toTopOf="@id/detailed_fighter_stats_wis_text" />
+
+    <TextView
+        android:id="@+id/detailed_fighter_stats_agi_text"
+        style="@style/DetailedFighterStatsText"
+        android:layout_marginStart="2dp"
+        android:text="1413"
+        app:layout_constraintBaseline_toBaselineOf="@id/detailed_fighter_stats_wis_text"
+        app:layout_constraintStart_toEndOf="@id/detailed_fighter_stats_agi_ic" />
+
+</merge>

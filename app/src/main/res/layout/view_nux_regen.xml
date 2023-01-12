@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_height="40dp"
+    tools:layout_width="85dp">
+
+    <View
+        android:id="@+id/view_nux_regen_bp_background"
+        style="@style/RegenLogoBackground"
+        android:background="@drawable/ic_bp_ic_background"
+        app:layout_constraintEnd_toEndOf="@id/view_nux_regen_bp_1" />
+
+    <View
+        android:id="@+id/view_nux_regen_bp_title"
+        style="@style/RegenLogoImage"
+        app:layout_constraintBottom_toBottomOf="@id/view_nux_regen_bp_background"
+        app:layout_constraintEnd_toEndOf="@id/view_nux_regen_bp_background"
+        app:layout_constraintStart_toStartOf="@id/view_nux_regen_bp_background"
+        app:layout_constraintTop_toTopOf="@id/view_nux_regen_bp_background" />
+
+    <View
+        android:id="@+id/view_nux_regen_bp_1"
+        style="@style/NuxRegenNuxBit"
+        app:layout_constraintEnd_toStartOf="@+id/view_nux_regen_bp_2"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/view_nux_regen_bp_background" />
+
+    <View
+        android:id="@+id/view_nux_regen_bp_2"
+        style="@style/NuxRegenNuxBit"
+        app:layout_constraintEnd_toStartOf="@+id/view_nux_regen_bp_3"
+        app:layout_constraintStart_toEndOf="@+id/view_nux_regen_bp_1" />
+
+    <View
+        android:id="@+id/view_nux_regen_bp_3"
+        style="@style/NuxRegenNuxBit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/view_nux_regen_bp_2" />
+
+    <TextView
+        android:id="@+id/view_nux_regen_timer"
+        style="@style/RegenTimeCount"
+        app:layout_constraintBottom_toTopOf="@id/view_nux_regen_bp_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/view_nux_regen_bp_1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1:13:21" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

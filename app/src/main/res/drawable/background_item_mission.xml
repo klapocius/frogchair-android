@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:left="@dimen/frame_shadow_width"
+        android:top="@dimen/frame_shadow_width">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/mission_item_background_shadow" />
+        </shape>
+    </item>
+
+    <item
+        android:bottom="@dimen/frame_shadow_width"
+        android:right="@dimen/frame_shadow_width">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/mission_item_background" />
+        </shape>
+    </item>
+
+    <item
+        android:bottom="@dimen/frame_shadow_width"
+        android:right="@dimen/frame_shadow_width">
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="2dp"
+                android:color="@color/mission_item_border" />
+        </shape>
+    </item>
+
+</layer-list>

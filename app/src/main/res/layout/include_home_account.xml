@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_home">
+
+    <View
+        android:id="@+id/home_account_background"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/background_home_footer"
+        app:layout_constraintDimensionRatio="4.57"
+        app:layout_constraintTop_toBottomOf="@id/home_toolbar_bottom_line" />
+
+    <View
+        android:id="@+id/home_account_crown_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/crown_background"
+        app:layout_constraintDimensionRatio="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/home_account_background"
+        app:layout_constraintWidth_percent="0.55" />
+
+    <View
+        android:id="@+id/home_account_crown_left_shadow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/shadow_left_crown"
+        app:layout_constraintBottom_toBottomOf="@id/home_account_crown_background"
+        app:layout_constraintDimensionRatio="3"
+        app:layout_constraintEnd_toStartOf="@id/home_account_crown_background"
+        app:layout_constraintTop_toTopOf="@id/home_account_crown_background" />
+
+    <TextView
+        android:id="@+id/home_account_bronze_crown_text"
+        style="@style/HomeCrownText"
+        tools:text="11"
+        android:textColor="@color/crown_bronze"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/home_account_bronze_crown_image"
+        style="@style/HomeCrownImage"
+        android:src="@drawable/ic_crown_bronze"
+        app:layout_constraintEnd_toStartOf="@id/home_account_bronze_crown_text" />
+
+    <TextView
+        android:id="@+id/home_account_silver_crown_text"
+        style="@style/HomeCrownText"
+        tools:text="47"
+        android:textColor="@color/crown_silver"
+        app:layout_constraintEnd_toStartOf="@id/home_account_bronze_crown_image" />
+
+    <ImageView
+        android:id="@+id/home_account_silver_crown_image"
+        style="@style/HomeCrownImage"
+        android:src="@drawable/ic_crown_silver"
+        app:layout_constraintEnd_toStartOf="@id/home_account_silver_crown_text" />
+
+    <TextView
+        android:id="@+id/home_account_gold_crown_text"
+        style="@style/HomeCrownText"
+        tools:text="3"
+        android:textColor="@color/crown_gold"
+        app:layout_constraintEnd_toStartOf="@id/home_account_silver_crown_image" />
+
+    <ImageView
+        android:id="@+id/home_account_gold_crown_image"
+        style="@style/HomeCrownImage"
+        android:src="@drawable/ic_crown_gold"
+        app:layout_constraintEnd_toStartOf="@id/home_account_gold_crown_text" />
+
+    <TextView
+        android:id="@+id/home_account_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gallimard"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/home_account_background"
+        app:layout_constraintEnd_toEndOf="@id/home_account_background"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="@id/home_account_background"
+        app:layout_constraintTop_toTopOf="@id/home_account_background"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/home_account_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/purple_500"
+        android:src="@drawable/fighter_205412_image"
+        app:layout_constraintBottom_toBottomOf="@id/home_account_background"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toStartOf="@id/home_account_image_shadow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/home_account_background"
+        app:layout_constraintWidth_percent="0.12"
+        app:tint="@color/purple_700" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/background_profile_image_frame"
+        app:layout_constraintBottom_toBottomOf="@id/home_account_image"
+        app:layout_constraintEnd_toEndOf="@id/home_account_image"
+        app:layout_constraintStart_toStartOf="@id/home_account_image"
+        app:layout_constraintTop_toTopOf="@id/home_account_image" />
+
+    <View
+        android:id="@+id/home_account_image_shadow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/shadow_home_account_picture"
+        app:layout_constraintBottom_toBottomOf="@id/home_account_background"
+        app:layout_constraintDimensionRatio="0.13"
+        app:layout_constraintEnd_toStartOf="@id/home_account_name"
+        app:layout_constraintStart_toEndOf="@id/home_account_image"
+        app:layout_constraintTop_toTopOf="@id/home_account_background" />
+
+
+</merge>

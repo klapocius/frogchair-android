@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".common.DotApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_raw"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher_raw"
+        android:supportsRtl="true"
+        android:theme="@style/ThemeFrogChair"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".feature.splashscreen.SplashActivity"
+            android:theme="@style/ThemeSplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".feature.home.ui.HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".feature.missionlist.ui.MissionListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".feature.band.BandActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".feature.mission.MissionActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".feature.fighterlist.FighterListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".feature.detailedfighter.DetailedFighterActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".feature.catalog.ui.CatalogActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".feature.summon.home.SummonHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".feature.summon.details.SummonDetailsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".feature.account.login.ui.LoginActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".feature.account.create.ui.CreateAccountActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".feature.more.settings.ui.SettingsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".feature.fight.FightActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

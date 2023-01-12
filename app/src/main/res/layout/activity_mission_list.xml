@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_background"
+    tools:context=".feature.home.ui.HomeActivity">
+
+    <include layout="@layout/include_title_toolbar" />
+
+    <View
+        android:id="@+id/mission_list_subtoolbar_background"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/toolbar_bottom_line"
+        app:layout_constraintDimensionRatio="@dimen/toolbar_width_ratio"
+        app:layout_constraintTop_toBottomOf="@id/title_toolbar_line_bottom" />
+
+    <TextView
+        android:id="@+id/mission_list_subtoolbar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/mission_list_content_margin"
+        android:fontFamily="@font/dot_bold"
+        android:textColor="@color/mission_list_subtoolbar_text"
+        android:textSize="14sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/mission_list_subtoolbar_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/mission_list_subtoolbar_background"
+        tools:text=">> 2-1 ~ Terrainia ~"
+        tools:visibility="visible" />
+
+    <Spinner
+        android:id="@+id/mission_list_chapter_choice"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/background_dropdown_mission"
+        android:spinnerMode="dropdown"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/mission_list_subtoolbar_background"
+        app:layout_constraintDimensionRatio="6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/mission_list_subtoolbar_background"
+        app:layout_constraintWidth_percent="0.45" />
+
+    <View
+        android:id="@+id/mission_list_subtoolbar_line_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mission_list_subtoolbar_bottom_line"
+        app:layout_constraintTop_toBottomOf="@id/mission_list_subtoolbar_background" />
+
+    <View
+        android:id="@+id/mission_list_subtoolbar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_shadow_height"
+        android:background="@drawable/shadow_down"
+        app:layout_constraintTop_toBottomOf="@id/mission_list_subtoolbar_line_bottom" />
+
+
+    <ImageView
+        android:id="@+id/mission_list_background"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_map_bg2"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mission_list_subtoolbar_line_bottom"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/mission_list_welcome_back"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/background_welcome_back"
+        android:gravity="end|center_vertical"
+        android:padding="3dp"
+        android:paddingEnd="6dp"
+        android:text="Welcome back to Texel!"
+        android:textColor="@color/white_transparent"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mission_list_subtoolbar_line_bottom"
+        app:layout_constraintWidth_percent="0.7"
+        tools:visibility="visible" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mission_list_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/mission_list_content_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mission_list_welcome_back"
+        tools:listitem="@layout/item_mission" />
+
+    <View
+        android:id="@+id/mission_list_back_arrow"
+        style="@style/BackArrowStandalone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

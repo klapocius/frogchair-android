@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feature.home.ui.HomeActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_map_bg4"
+        app:layout_constraintBottom_toTopOf="@id/home_navigation_grey_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_account_background" />
+
+    <include layout="@layout/include_regen_toolbar" />
+
+    <View
+        android:id="@+id/home_toolbar_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/grey_toolbar_bottom_line"
+        app:layout_constraintTop_toBottomOf="@id/include_toolbar" />
+
+    <include layout="@layout/include_home_account" />
+
+    <View
+        android:id="@+id/home_toolbar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_shadow_height"
+        android:background="@drawable/shadow_down"
+        app:layout_constraintTop_toBottomOf="@id/home_toolbar_bottom_line" />
+
+    <View
+        android:id="@+id/home_account_first_line"
+        app:layout_constraintTop_toBottomOf="@id/home_account_background"
+        style="@style/LineGrey" />
+
+    <View
+        android:id="@+id/home_account_second_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/grey_line_dark"
+        app:layout_constraintTop_toBottomOf="@id/home_account_first_line" />
+
+    <include layout="@layout/include_home_band" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@drawable/shadow_up"
+        app:layout_constraintBottom_toTopOf="@id/home_navigation_grey_line" />
+
+    <include layout="@layout/include_home_navigation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SecondaryButton">
+        <attr name="iconDrawable" format="reference" />
+        <attr name="text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="MoreMenuItemView">
+        <attr name="moreImage" format="reference" />
+        <attr name="moreText" format="string" />
+        <attr name="moreAlpha" format="float" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_detailed_fighter">
+
+    <View
+        android:id="@+id/detailed_fighter_society_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/band_content_margin"
+        android:layout_marginEnd="@dimen/band_content_margin"
+        android:background="@drawable/background_detailed_fighter_stats"
+        android:foreground="@color/black_transparent_20"
+        app:layout_constraintBottom_toTopOf="@id/detailed_fighter_lore_separator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detailed_fighter_tribe_separator"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <View
+        android:id="@+id/detailed_fighter_tribe_ic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/band_content_margin"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/ic_tribe_xana"
+        app:layout_constraintBottom_toTopOf="@id/detailed_fighter_sign_ic"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintStart_toStartOf="@id/detailed_fighter_society_background"
+        app:layout_constraintTop_toTopOf="@id/detailed_fighter_society_background"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <TextView
+        android:id="@+id/detailed_fighter_tribe_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="Xana"
+        android:textColor="@color/fighter_stats_xana"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/detailed_fighter_tribe_ic"
+        app:layout_constraintStart_toEndOf="@id/detailed_fighter_tribe_ic"
+        app:layout_constraintTop_toTopOf="@id/detailed_fighter_tribe_ic" />
+
+    <View
+        android:id="@+id/detailed_fighter_sign_ic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/ic_sign_air"
+        app:layout_constraintBottom_toTopOf="@id/detailed_fighter_class_ic"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintStart_toStartOf="@id/detailed_fighter_tribe_ic"
+        app:layout_constraintTop_toBottomOf="@id/detailed_fighter_tribe_ic" />
+
+    <TextView
+        android:id="@+id/detailed_fighter_sign_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Air"
+        android:textColor="@color/fighter_stats_air"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/detailed_fighter_sign_ic"
+        app:layout_constraintStart_toStartOf="@id/detailed_fighter_tribe_text"
+        app:layout_constraintTop_toTopOf="@id/detailed_fighter_sign_ic" />
+
+    <View
+        android:id="@+id/detailed_fighter_class_ic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="@dimen/detailed_fighter_subcontent_margin"
+        android:background="@drawable/ic_class_champ"
+        app:layout_constraintBottom_toBottomOf="@id/detailed_fighter_society_background"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintStart_toStartOf="@id/detailed_fighter_tribe_ic"
+        app:layout_constraintTop_toBottomOf="@id/detailed_fighter_sign_ic" />
+
+    <TextView
+        android:id="@+id/detailed_fighter_class_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Champ"
+        android:textColor="@color/fighter_stats_class"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/detailed_fighter_class_ic"
+        app:layout_constraintStart_toStartOf="@id/detailed_fighter_tribe_text"
+        app:layout_constraintTop_toTopOf="@id/detailed_fighter_class_ic" />
+
+</merge>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/include_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    app:layout_constraintDimensionRatio="@dimen/toolbar_width_ratio"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:showIn="@layout/activity_home">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/background_home_header_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/background_home_header_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.50"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/toolbar_home_view"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/button_home_disabled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.frogchair.android.common.ui.UserLevelView
+        android:id="@+id/toolbar_level_view"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="@dimen/toolbar_energy_width_ratio"
+        app:layout_constraintEnd_toStartOf="@+id/toolbar_energy_view"
+        app:layout_constraintStart_toEndOf="@+id/toolbar_home_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.frogchair.android.common.ui.EnergyRegenView
+        android:id="@+id/toolbar_energy_view"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="@dimen/toolbar_energy_width_ratio"
+        app:layout_constraintEnd_toStartOf="@+id/toolbar_nux_view"
+        app:layout_constraintStart_toEndOf="@+id/toolbar_level_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.frogchair.android.common.ui.NuxRegenView
+        android:id="@+id/toolbar_nux_view"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="@dimen/toolbar_bp_width_ratio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/toolbar_energy_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

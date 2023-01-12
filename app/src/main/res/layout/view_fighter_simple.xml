@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/grey_line"
+    tools:layout_height="100dp"
+    tools:layout_width="wrap_content">
+
+    <View
+        android:id="@+id/view_fighter_simple_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/img_background_fighter"
+        app:layout_constraintBottom_toBottomOf="@+id/view_fighter_simple_image"
+        app:layout_constraintEnd_toEndOf="@+id/view_fighter_simple_image"
+        app:layout_constraintStart_toStartOf="@+id/view_fighter_simple_image"
+        app:layout_constraintTop_toTopOf="@+id/view_fighter_simple_image" />
+
+    <ImageView
+        android:id="@+id/view_fighter_simple_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:src="@drawable/fighter_205400_icon"
+        app:layout_constraintBottom_toBottomOf="@id/view_fighter_simple_border"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="@id/view_fighter_simple_border"
+        app:layout_constraintStart_toStartOf="@id/view_fighter_simple_border"
+        app:layout_constraintTop_toTopOf="@id/view_fighter_simple_border" />
+
+    <View
+        android:id="@+id/view_fighter_simple_border"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/background_fighter_frame_brown"
+        app:layout_constraintBottom_toTopOf="@id/view_fighter_simple_level_text"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view_fighter_simple_weapon_frame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/img_weapon_background_grey"
+        app:layout_constraintBottom_toBottomOf="@id/view_fighter_simple_border"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintStart_toStartOf="@id/view_fighter_simple_border"
+        app:layout_constraintWidth_percent="0.33" />
+
+    <View
+        android:id="@+id/view_fighter_simple_weapon_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/weapon_100251"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@id/view_fighter_simple_weapon_frame"
+        app:layout_constraintEnd_toEndOf="@id/view_fighter_simple_weapon_frame"
+        app:layout_constraintStart_toStartOf="@id/view_fighter_simple_weapon_frame"
+        app:layout_constraintTop_toTopOf="@id/view_fighter_simple_weapon_frame" />
+
+    <View
+        android:id="@+id/view_fighter_simple_levied"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/img_fighter_in_band"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintStart_toStartOf="@id/view_fighter_simple_border"
+        app:layout_constraintTop_toTopOf="@id/view_fighter_simple_border"
+        app:layout_constraintWidth_percent="0.45" />
+
+    <View
+        android:id="@+id/view_fighter_simple_rarity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_rarity_epic"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <View
+        android:id="@+id/view_fighter_simple_sign"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_sign_earth"
+        app:layout_constraintBottom_toBottomOf="@id/view_fighter_simple_border"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="@id/view_fighter_simple_border"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <TextView
+        android:id="@+id/view_fighter_simple_level_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:text="Lv."
+        android:textColor="@color/fighter_frame_level"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/view_fighter_frame_sef_text"
+        app:layout_constraintStart_toStartOf="@id/view_fighter_simple_border" />
+
+    <TextView
+        android:id="@+id/view_fighter_simple_level_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="80"
+        android:textColor="@color/fighter_frame_level"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@id/view_fighter_simple_level_text"
+        app:layout_constraintStart_toEndOf="@+id/view_fighter_simple_level_text" />
+
+    <TextView
+        android:id="@+id/view_fighter_simple_level_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/80"
+        android:textColor="@color/fighter_frame_level"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/view_fighter_simple_level_text"
+        app:layout_constraintStart_toEndOf="@+id/view_fighter_simple_level_current" />
+
+    <TextView
+        android:id="@+id/view_fighter_frame_sef_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="2dp"
+        android:text="SEF."
+        android:textColor="@color/fighter_simple_sef"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/view_fighter_simple_border" />
+
+    <TextView
+        android:id="@+id/view_fighter_frame_sef_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="5"
+        android:textColor="@color/fighter_simple_sef"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@id/view_fighter_frame_sef_text"
+        app:layout_constraintStart_toEndOf="@+id/view_fighter_frame_sef_text" />
+
+    <TextView
+        android:id="@+id/view_fighter_frame_sef_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/5"
+        android:textColor="@color/fighter_simple_sef"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/view_fighter_frame_sef_text"
+        app:layout_constraintStart_toEndOf="@+id/view_fighter_frame_sef_current" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/view_fighter_dispensable_views"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="view_fighter_frame_sef_max,view_fighter_frame_sef_current,view_fighter_simple_level_max,view_fighter_frame_sef_text,view_fighter_simple_level_current,view_fighter_simple_level_text,view_fighter_simple_levied,view_fighter_simple_weapon_image,view_fighter_simple_weapon_frame" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/view_fighter_frame">
+
+    <TextView
+        android:id="@+id/view_fighter_frame_hp_text"
+        style="@style/FighterFrameStatsText"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:text="1942"
+        android:textColor="@color/fighter_hp"
+        app:layout_constraintBottom_toTopOf="@+id/view_fighter_frame_atk_text"
+        app:layout_constraintStart_toEndOf="@+id/view_fighter_frame_hp_ic"
+        app:layout_constraintTop_toTopOf="@id/view_fighter_simple_border" />
+
+    <TextView
+        android:id="@+id/view_fighter_frame_atk_text"
+        style="@style/FighterFrameStatsText"
+        android:text="1123"
+        android:textColor="@color/fighter_atk"
+        app:layout_constraintBottom_toTopOf="@+id/view_fighter_frame_def_text"
+        app:layout_constraintStart_toStartOf="@id/view_fighter_frame_hp_text"
+        app:layout_constraintTop_toBottomOf="@+id/view_fighter_frame_hp_text" />
+
+    <TextView
+        android:id="@+id/view_fighter_frame_def_text"
+        style="@style/FighterFrameStatsText"
+        android:text="1285"
+        android:textColor="@color/fighter_def"
+        app:layout_constraintBottom_toTopOf="@+id/view_fighter_frame_wis_text"
+        app:layout_constraintStart_toStartOf="@id/view_fighter_frame_hp_text"
+        app:layout_constraintTop_toBottomOf="@+id/view_fighter_frame_atk_text" />
+
+    <TextView
+        android:id="@+id/view_fighter_frame_wis_text"
+        style="@style/FighterFrameStatsText"
+        android:text="6762"
+        android:textColor="@color/fighter_wis"
+        app:layout_constraintBottom_toTopOf="@+id/view_fighter_frame_agi_text"
+        app:layout_constraintStart_toStartOf="@id/view_fighter_frame_hp_text"
+        app:layout_constraintTop_toBottomOf="@+id/view_fighter_frame_def_text" />
+
+    <TextView
+        android:id="@+id/view_fighter_frame_agi_text"
+        style="@style/FighterFrameStatsText"
+        android:layout_marginBottom="2dp"
+        android:text="6222"
+        android:textColor="@color/fighter_agi"
+        app:layout_constraintBottom_toBottomOf="@+id/view_fighter_simple_border"
+        app:layout_constraintStart_toStartOf="@id/view_fighter_frame_hp_text"
+        app:layout_constraintTop_toBottomOf="@+id/view_fighter_frame_wis_text" />
+
+    <View
+        android:id="@+id/view_fighter_frame_hp_ic"
+        style="@style/FighterFrameStatImage"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/ic_hp_small"
+        app:layout_constraintBottom_toBottomOf="@+id/view_fighter_frame_hp_text"
+        app:layout_constraintStart_toStartOf="@id/view_fighter_simple_border"
+        app:layout_constraintTop_toTopOf="@id/view_fighter_frame_hp_text" />
+
+    <View
+        android:id="@+id/view_fighter_frame_atk_ic"
+        style="@style/FighterFrameStatImage"
+        android:background="@drawable/ic_atk_small"
+        app:layout_constraintBottom_toBottomOf="@+id/view_fighter_frame_atk_text"
+        app:layout_constraintStart_toStartOf="@id/view_fighter_frame_hp_ic"
+        app:layout_constraintTop_toTopOf="@+id/view_fighter_frame_atk_text" />
+
+    <View
+        android:id="@+id/view_fighter_frame_def_ic"
+        style="@style/FighterFrameStatImage"
+        android:background="@drawable/ic_def_small"
+        app:layout_constraintBottom_toBottomOf="@+id/view_fighter_frame_def_text"
+        app:layout_constraintStart_toStartOf="@id/view_fighter_frame_hp_ic"
+        app:layout_constraintTop_toTopOf="@+id/view_fighter_frame_def_text" />
+
+    <View
+        android:id="@+id/view_fighter_frame_wis_ic"
+        style="@style/FighterFrameStatImage"
+        android:background="@drawable/ic_wis_small"
+        app:layout_constraintBottom_toBottomOf="@+id/view_fighter_frame_wis_text"
+        app:layout_constraintStart_toStartOf="@id/view_fighter_frame_hp_ic"
+        app:layout_constraintTop_toTopOf="@+id/view_fighter_frame_wis_text" />
+
+    <View
+        android:id="@+id/view_fighter_frame_agi_ic"
+        style="@style/FighterFrameStatImage"
+        android:background="@drawable/ic_agi_small"
+        app:layout_constraintBottom_toBottomOf="@+id/view_fighter_frame_agi_text"
+        app:layout_constraintStart_toStartOf="@id/view_fighter_frame_hp_ic"
+        app:layout_constraintTop_toTopOf="@+id/view_fighter_frame_agi_text" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/view_fighter_frame_stats_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="view_fighter_frame_hp_text,view_fighter_frame_atk_text,view_fighter_frame_def_text,view_fighter_frame_wis_text,view_fighter_frame_agi_text,view_fighter_frame_hp_ic,view_fighter_frame_atk_ic,view_fighter_frame_def_ic,view_fighter_frame_wis_ic,view_fighter_frame_agi_ic"
+        tools:visibility="gone" />
+
+</merge>

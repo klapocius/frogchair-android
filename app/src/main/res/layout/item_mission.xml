@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginStart="@dimen/mission_list_content_margin"
+    android:layout_marginTop="@dimen/mission_list_content_margin">
+
+    <View
+        android:id="@+id/item_mission_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/mission_list_content_margin"
+        android:background="@drawable/background_item_mission"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/item_mission_reward"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_mission_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:fontFamily="@font/dot_bold"
+        android:text="2-1"
+        android:textColor="@color/mission_item_code"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/item_mission_background_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_mission_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dot_bold"
+        android:paddingBottom="@dimen/frame_shadow_width"
+        android:text="Terrainia"
+        android:textColor="@color/mission_item_title"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/item_mission_arrow"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toEndOf="@id/item_mission_code"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/item_mission_arrow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/ic_right_arrow"
+        app:layout_constraintBottom_toBottomOf="@id/item_mission_background_margin"
+        app:layout_constraintDimensionRatio="0.6"
+        app:layout_constraintEnd_toEndOf="@id/item_mission_background"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/item_mission_completed"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:src="@drawable/img_completed"
+        app:layout_constraintBottom_toBottomOf="@id/item_mission_background_margin"
+        app:layout_constraintEnd_toEndOf="@id/item_mission_background"
+        app:layout_constraintHeight_percent="1"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/item_mission_locked_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.5"
+        android:background="@color/grey_background"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/item_mission_background_margin"
+        app:layout_constraintEnd_toEndOf="@id/item_mission_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/item_mission_locked"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_lock"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/item_mission_background_margin"
+        app:layout_constraintEnd_toEndOf="@id/item_mission_background"
+        app:layout_constraintHeight_percent=".9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/item_mission_reward"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/mission_list_content_margin"
+        android:background="@drawable/background_reward"
+        android:padding="4dp"
+        android:src="@drawable/img_mission_reward_nux"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.7"
+        app:layout_constraintTop_toTopOf="@id/item_mission_background" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/background_reward_frame"
+        app:layout_constraintBottom_toBottomOf="@+id/item_mission_reward"
+        app:layout_constraintEnd_toEndOf="@+id/item_mission_reward"
+        app:layout_constraintStart_toStartOf="@+id/item_mission_reward"
+        app:layout_constraintTop_toTopOf="@+id/item_mission_reward" />
+
+    <TextView
+        android:id="@+id/item_mission_reward_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More>"
+        android:textColor="@color/mission_item_more"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/item_mission_background"
+        app:layout_constraintStart_toStartOf="@id/item_mission_reward" />
+
+    <View
+        android:id="@+id/item_mission_reward_click_area"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/item_mission_reward_more"
+        app:layout_constraintEnd_toEndOf="@+id/item_mission_reward"
+        app:layout_constraintStart_toStartOf="@+id/item_mission_reward"
+        app:layout_constraintTop_toTopOf="@id/item_mission_reward" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/item_mission_background_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="@dimen/frame_shadow_width"
+        app:layout_constraintTop_toBottomOf="@id/item_mission_background" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

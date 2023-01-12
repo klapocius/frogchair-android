@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_height="40dp"
+    tools:layout_width="85dp">
+
+    <ProgressBar
+        android:id="@+id/view_energy_regen_progress_bar"
+        style="@style/RegenProgressBar"
+        android:progress="75"
+        android:progressDrawable="@drawable/progress_bar_energy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/view_energy_regen_EN_background" />
+
+    <View
+        android:id="@+id/view_energy_regen_EN_background"
+        style="@style/RegenLogoBackground"
+        android:background="@drawable/ic_bp_ic_background" />
+
+    <View
+        android:id="@+id/view_energy_regen_EN_title"
+        style="@style/RegenLogoImage"
+        android:background="@drawable/ic_energy"
+        app:layout_constraintBottom_toBottomOf="@id/view_energy_regen_EN_background"
+        app:layout_constraintEnd_toEndOf="@id/view_energy_regen_EN_background"
+        app:layout_constraintStart_toStartOf="@id/view_energy_regen_EN_background"
+        app:layout_constraintTop_toTopOf="@id/view_energy_regen_EN_background" />
+
+
+    <TextView
+        android:id="@+id/view_energy_regen_progress_text"
+        style="@style/RegenWhiteText"
+        android:text="75"
+        app:layout_constraintBottom_toBottomOf="@id/view_energy_regen_progress_bar"
+        app:layout_constraintEnd_toEndOf="@id/view_energy_regen_progress_bar"
+        app:layout_constraintStart_toStartOf="@id/view_energy_regen_progress_bar"
+        app:layout_constraintTop_toTopOf="@id/view_energy_regen_progress_bar" />
+
+    <TextView
+        android:id="@+id/view_energy_regen_timer"
+        style="@style/RegenTimeCount"
+        android:translationX="-3dp"
+        app:layout_constraintBottom_toTopOf="@id/view_energy_regen_progress_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/view_energy_regen_progress_bar"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="4:54:46" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

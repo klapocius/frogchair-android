@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_swipe_grid" />
+
+    <View
+        android:id="@+id/view_swipe_line_horizontal_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/img_swipe_1_horizontal"
+        android:visibility="gone"
+        app:layout_constraintHeight_percent="@dimen/swipe_view_line_percent" />
+
+    <View
+        android:id="@+id/view_swipe_line_vertical_1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_swipe_1_vertical"
+        android:visibility="gone"
+        app:layout_constraintWidth_percent="@dimen/swipe_view_line_percent" />
+
+    <View
+        android:id="@+id/view_swipe_line_upwards"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_swipe_1_upwards"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/view_swipe_line_downwards"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_swipe_1_downwards"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/view_swipe_line_vertical_2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_swipe_2_vertical"
+        android:visibility="gone"
+        app:layout_constraintWidth_percent="@dimen/swipe_view_line_percent" />
+
+    <View
+        android:id="@+id/view_swipe_line_horizontal_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/img_swipe_2_horizontal"
+        android:visibility="gone"
+        app:layout_constraintHeight_percent="@dimen/swipe_view_line_percent" />
+
+    <View
+        android:id="@+id/view_swipe_line_horizontal_3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/img_swipe_3_horizontal"
+        android:visibility="gone"
+        app:layout_constraintHeight_percent="@dimen/swipe_view_line_percent" />
+
+    <View
+        android:id="@+id/view_swipe_line_vertical_3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_swipe_3_vertical"
+        android:visibility="gone"
+        app:layout_constraintWidth_percent="@dimen/swipe_view_line_percent" />
+
+    <View
+        android:id="@+id/view_swipe_touch_down"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/img_swipe_1_click"
+        android:elevation="4px"
+        android:visibility="gone"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintWidth_percent="@dimen/swipe_view_line_percent_square" />
+
+    <com.frogchair.android.feature.fight.FighterSwipeView
+        android:id="@+id/swipe_fighter_1"
+        style="@style/swipe_view_fighter"
+        app:layout_constraintBottom_toTopOf="@id/swipe_fighter_4"
+        app:layout_constraintEnd_toStartOf="@+id/swipe_fighter_2"
+        app:layout_constraintStart_toStartOf="@id/view_swipe_start_guideline"
+        app:layout_constraintTop_toTopOf="@id/view_swipe_top_guideline" />
+
+    <com.frogchair.android.feature.fight.FighterSwipeView
+        android:id="@+id/swipe_fighter_2"
+        style="@style/swipe_view_fighter"
+        app:layout_constraintBottom_toTopOf="@id/swipe_fighter_5"
+        app:layout_constraintEnd_toStartOf="@+id/swipe_fighter_3"
+        app:layout_constraintStart_toEndOf="@+id/swipe_fighter_1"
+        app:layout_constraintTop_toTopOf="@id/view_swipe_top_guideline" />
+
+    <com.frogchair.android.feature.fight.FighterSwipeView
+        android:id="@+id/swipe_fighter_3"
+        style="@style/swipe_view_fighter"
+        app:layout_constraintBottom_toTopOf="@id/swipe_fighter_6"
+        app:layout_constraintEnd_toEndOf="@id/view_swipe_end_guideline"
+        app:layout_constraintStart_toEndOf="@+id/swipe_fighter_2"
+        app:layout_constraintTop_toTopOf="@id/view_swipe_top_guideline" />
+
+    <com.frogchair.android.feature.fight.FighterSwipeView
+        android:id="@+id/swipe_fighter_4"
+        style="@style/swipe_view_fighter"
+        app:layout_constraintBottom_toTopOf="@id/swipe_fighter_7"
+        app:layout_constraintEnd_toStartOf="@+id/swipe_fighter_5"
+        app:layout_constraintStart_toStartOf="@id/view_swipe_start_guideline"
+
+        app:layout_constraintTop_toBottomOf="@+id/swipe_fighter_1" />
+
+    <com.frogchair.android.feature.fight.FighterSwipeView
+        android:id="@+id/swipe_fighter_5"
+        style="@style/swipe_view_fighter"
+        app:layout_constraintBottom_toTopOf="@id/swipe_fighter_8"
+        app:layout_constraintEnd_toStartOf="@+id/swipe_fighter_6"
+        app:layout_constraintStart_toEndOf="@+id/swipe_fighter_4"
+        app:layout_constraintTop_toBottomOf="@+id/swipe_fighter_2" />
+
+    <com.frogchair.android.feature.fight.FighterSwipeView
+        android:id="@+id/swipe_fighter_6"
+        style="@style/swipe_view_fighter"
+        app:layout_constraintBottom_toTopOf="@id/swipe_fighter_9"
+        app:layout_constraintEnd_toEndOf="@id/view_swipe_end_guideline"
+        app:layout_constraintStart_toEndOf="@+id/swipe_fighter_5"
+        app:layout_constraintTop_toBottomOf="@+id/swipe_fighter_3" />
+
+    <com.frogchair.android.feature.fight.FighterSwipeView
+        android:id="@+id/swipe_fighter_7"
+        style="@style/swipe_view_fighter"
+        app:layout_constraintBottom_toBottomOf="@id/view_swipe_bottom_guideline"
+        app:layout_constraintEnd_toStartOf="@+id/swipe_fighter_8"
+        app:layout_constraintStart_toStartOf="@id/view_swipe_start_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/swipe_fighter_4" />
+
+    <com.frogchair.android.feature.fight.FighterSwipeView
+        android:id="@+id/swipe_fighter_8"
+        style="@style/swipe_view_fighter"
+        app:layout_constraintBottom_toBottomOf="@id/view_swipe_bottom_guideline"
+        app:layout_constraintEnd_toStartOf="@+id/swipe_fighter_9"
+        app:layout_constraintStart_toEndOf="@+id/swipe_fighter_7"
+        app:layout_constraintTop_toBottomOf="@+id/swipe_fighter_5" />
+
+    <com.frogchair.android.feature.fight.FighterSwipeView
+        android:id="@+id/swipe_fighter_9"
+        style="@style/swipe_view_fighter"
+        app:layout_constraintBottom_toBottomOf="@id/view_swipe_bottom_guideline"
+        app:layout_constraintEnd_toEndOf="@id/view_swipe_end_guideline"
+        app:layout_constraintStart_toEndOf="@+id/swipe_fighter_8"
+        app:layout_constraintTop_toBottomOf="@id/swipe_fighter_6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/view_swipe_start_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/view_swipe_end_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.97" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/view_swipe_top_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/view_swipe_bottom_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.97" />
+
+</merge>

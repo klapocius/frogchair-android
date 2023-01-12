@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="toolbar_width_ratio">8</dimen>
+    <dimen name="toolbar_energy_width_ratio">1.9</dimen>
+    <dimen name="toolbar_bp_width_ratio">2</dimen>
+
+    <dimen name="fighter_ratio">1.33</dimen>
+    <dimen name="home_fighter_width_percent_line_1">0.48</dimen>
+    <dimen name="home_fighter_width_percent_line_2">0.38</dimen>
+    <dimen name="home_fighter_width_percent_line_3">0.275</dimen>
+
+    <dimen name="line_height">2.5dp</dimen>
+    <dimen name="toolbar_shadow_height">5dp</dimen>
+
+    <item name="primary_button_width_percent" format="float" type="dimen">0.3</item>
+    <item name="secondary_button_width_percent" format="float" type="dimen">0.16</item>
+    <dimen name="navigation_horizontal_margin">9dp</dimen>
+    <item name="back_arrow_width_percent" format="float" type="dimen">0.13</item>
+    <item name="back_arrow_ratio" format="float" type="dimen">1.23</item>
+    <item name="alpha_disabled" type="dimen" format="float">0.6</item>
+    <dimen name="back_arrow_ratio_padding">6dp</dimen>
+
+    <dimen name="mission_list_content_margin">12dp</dimen>
+
+    <dimen name="frame_shadow_width">3dp</dimen>
+
+    <dimen name="band_fighter_layout_horizontal_margin">6dp</dimen>
+    <dimen name="band_fighter_layout_vertical_margin">2dp</dimen>
+    <dimen name="band_content_margin">15dp</dimen>
+
+    <dimen name="fighter_list_item_margin">8dp</dimen>
+    <dimen name="fighter_list_recycler_margin">12dp</dimen>
+
+    <dimen name="detailed_fighter_subcontent_margin">8dp</dimen>
+
+    <dimen name="summon_home_stone_size">20dp</dimen>
+
+    <dimen name="swipe_view_fighter_percent">0.285</dimen>
+    <dimen name="swipe_view_line_percent_square">0.315</dimen>
+    <dimen name="swipe_view_line_percent">0.33</dimen>
+
+    <dimen name="fight_fighter_width_percent">0.40</dimen>
+    <dimen name="fight_fighter_vertical_bias_1">0.20</dimen>
+    <dimen name="fight_fighter_vertical_bias_2">0.50</dimen>
+    <dimen name="fight_fighter_vertical_bias_3">0.80</dimen>
+
+</resources>

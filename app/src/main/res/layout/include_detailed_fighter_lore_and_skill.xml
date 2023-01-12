@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:showIn="@layout/activity_detailed_fighter">
+
+
+    <TextView
+        android:id="@+id/detailed_fighter_lore_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/band_content_margin"
+        android:layout_marginTop="@dimen/detailed_fighter_subcontent_margin"
+        android:layout_marginEnd="@dimen/band_content_margin"
+        android:background="@drawable/background_detailed_fighter_skill_title"
+        android:gravity="start|center_vertical"
+        android:paddingStart="@dimen/detailed_fighter_subcontent_margin"
+        android:text="Lore"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/detailed_fighter_lore_separator" />
+
+    <View
+        android:id="@+id/detailed_fighter_lore_arrow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        android:background="@drawable/ic_triangle_top"
+        app:layout_constraintBottom_toBottomOf="@id/detailed_fighter_lore_title"
+        app:layout_constraintDimensionRatio="1.36"
+        app:layout_constraintEnd_toEndOf="@id/detailed_fighter_lore_title"
+        app:layout_constraintTop_toTopOf="@id/detailed_fighter_lore_title" />
+
+    <TextView
+        android:id="@+id/detailed_fighter_lore_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/background_detailed_fighter_skill_text"
+        android:paddingStart="8dp"
+        android:paddingTop="14dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="14dp"
+        android:text="Are we born to duty and death? Is honor but gilded armor on mouldering bones?"
+        android:textColor="@color/fighter_detailed_lore"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/detailed_fighter_lore_title"
+        app:layout_constraintStart_toStartOf="@id/detailed_fighter_lore_title"
+        app:layout_constraintTop_toBottomOf="@id/detailed_fighter_lore_title" />
+
+    <TextView
+        android:id="@+id/detailed_fighter_skill_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/band_content_margin"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="@dimen/band_content_margin"
+        android:background="@drawable/background_detailed_fighter_skill_title"
+        android:gravity="start|center_vertical"
+        android:paddingStart="@dimen/detailed_fighter_subcontent_margin"
+        android:text="Skill"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/detailed_fighter_lore_text" />
+
+    <View
+        android:id="@+id/detailed_fighter_skill_arrow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        android:background="@drawable/ic_triangle_top"
+        app:layout_constraintBottom_toBottomOf="@id/detailed_fighter_skill_title"
+        app:layout_constraintDimensionRatio="1.36"
+        app:layout_constraintEnd_toEndOf="@id/detailed_fighter_skill_title"
+        app:layout_constraintTop_toTopOf="@id/detailed_fighter_skill_title" />
+
+    <View
+        android:id="@+id/detailed_fighter_skill_text_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/background_detailed_fighter_skill_text"
+        app:layout_constraintBottom_toBottomOf="@id/detailed_fighter_skill_description"
+        app:layout_constraintEnd_toEndOf="@id/detailed_fighter_lore_title"
+        app:layout_constraintStart_toStartOf="@id/detailed_fighter_lore_title"
+        app:layout_constraintTop_toBottomOf="@id/detailed_fighter_skill_title" />
+
+    <View
+        android:id="@+id/detailed_fighter_skill_type_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/ic_atk_grey"
+        app:layout_constraintBottom_toBottomOf="@id/detailed_fighter_skill_name"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintStart_toStartOf="@id/detailed_fighter_skill_text_background"
+        app:layout_constraintTop_toTopOf="@id/detailed_fighter_skill_name" />
+
+    <TextView
+        android:id="@+id/detailed_fighter_skill_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:text="Illwind (Elite)"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/detailed_fighter_skill_type_image"
+        app:layout_constraintTop_toTopOf="@id/detailed_fighter_skill_text_background" />
+
+    <com.frogchair.android.common.ui.SkillCDView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        app:layout_constraintBottom_toBottomOf="@id/detailed_fighter_skill_name"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintStart_toEndOf="@id/detailed_fighter_skill_name"
+        app:layout_constraintTop_toTopOf="@id/detailed_fighter_skill_name" />
+
+    <TextView
+        android:id="@+id/detailed_fighter_skill_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="Rank 3 double skill."
+        android:textColor="@color/fighter_detailed_lore"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/detailed_fighter_skill_type_image"
+        app:layout_constraintTop_toBottomOf="@id/detailed_fighter_skill_name" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/detailed_fighter_skill_info_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="detailed_fighter_skill_type_image,detailed_fighter_skill_text_background,detailed_fighter_skill_name,detailed_fighter_skill_description" />
+
+</merge>

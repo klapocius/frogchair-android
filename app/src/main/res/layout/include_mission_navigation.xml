@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_mission">
+
+    <View
+        android:id="@+id/mission_navigation_background"
+        style="@style/NavigationBackground" />
+
+    <FrameLayout
+        android:id="@+id/mission_navigation_back_arrow"
+        style="@style/NavigationBackArrowLayout"
+        app:layout_constraintTop_toTopOf="@id/mission_navigation_background">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_back_arrow" />
+
+    </FrameLayout>
+
+    <com.frogchair.android.common.ui.SecondaryButton
+        android:id="@+id/mission_navigation_heal"
+        style="@style/HomeNavigationItem"
+        android:alpha="@dimen/alpha_disabled"
+        app:iconDrawable="@drawable/ic_heal"
+        app:layout_constraintBottom_toBottomOf="@id/mission_navigation_background"
+        app:layout_constraintEnd_toStartOf="@+id/mission_navigation_main"
+        app:layout_constraintStart_toEndOf="@+id/mission_navigation_back_arrow"
+        app:layout_constraintTop_toTopOf="@id/mission_navigation_background"
+        app:text="Heal" />
+
+    <com.frogchair.android.common.ui.PrimaryButton
+        android:id="@+id/mission_navigation_main"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/mission_navigation_background"
+        app:layout_constraintEnd_toStartOf="@+id/mission_navigation_battle"
+        app:layout_constraintStart_toEndOf="@+id/mission_navigation_heal"
+        app:layout_constraintTop_toTopOf="@id/mission_navigation_background"
+        app:layout_constraintWidth_percent="@dimen/primary_button_width_percent" />
+
+    <com.frogchair.android.common.ui.SecondaryButton
+        android:id="@+id/mission_navigation_battle"
+        style="@style/HomeNavigationItem"
+        android:alpha="@dimen/alpha_disabled"
+        app:iconDrawable="@drawable/ic_battle"
+        app:layout_constraintBottom_toBottomOf="@id/mission_navigation_background"
+        app:layout_constraintEnd_toStartOf="@+id/mission_navigation_more"
+        app:layout_constraintStart_toEndOf="@+id/mission_navigation_main"
+        app:layout_constraintTop_toTopOf="@id/mission_navigation_background"
+        app:text="Battle" />
+
+    <com.frogchair.android.common.ui.SecondaryButton
+        android:id="@+id/mission_navigation_more"
+        style="@style/HomeNavigationItem"
+        android:layout_marginEnd="@dimen/navigation_horizontal_margin"
+        android:alpha="@dimen/alpha_disabled"
+        app:iconDrawable="@drawable/ic_more"
+        app:layout_constraintBottom_toBottomOf="@id/mission_navigation_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mission_navigation_battle"
+        app:layout_constraintTop_toTopOf="@id/mission_navigation_background"
+        app:text="More" />
+
+</merge>
