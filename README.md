@@ -15,4 +15,4 @@ Android application of an old game. Not playable, only the UI.
 
 ### License
 
-All rights reserved. Free to use for non-commercial FrogChair.
+All rights reserved on the source code. The images are property of their owners.
